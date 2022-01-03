@@ -150,18 +150,22 @@ console.log(person2.getSummary());
 /*
 FOR-LOOP
  */
-
 for (let i = 1; i <= 10; i++) {
     //console.log(i);
 }
 
 const array = ['A', 'B', 'C', 3, false, ['X', 'Y']]
 
-// Iterate through arrays
+// Iterate through arrays with counter
 for (let i = 0; i < array.length; i++) {
     if (i !== 3) continue;
     console.log(i);
     break;
+}
+
+// Iterate through arrays without counter
+for (let element of array) {
+    console.log(element);
 }
 
 /*
